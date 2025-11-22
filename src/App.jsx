@@ -6,6 +6,8 @@ import ReactPropsGuide from './Components/Contents/Props/ReactPropsGuide'
 import ReactStateGuide from './Components/Contents/States/ReactStateGuide'
 import Counter from './Components/Contents/States/Counter'
 import ReactClassStateGuide from './Components/Contents/States/ReactClassStateGuide'
+import ReactListsKeysDemo from './Components/Contents/ListAndKey/ReactListsKeysDemo'
+import ReactConditionalRendering from './Components/Contents/CR/ReactConditionalRendering'
 
 export default function App() {
   return (
@@ -26,8 +28,14 @@ export default function App() {
         <ReactStateGuide />
         <Counter />
       </div>
-      <div>
+      <div className='mb-5'>
         <ReactClassStateGuide />
+      </div>
+      <div className='mb-5'>
+        <ReactListsKeysDemo/>
+      </div>
+      <div>
+        <ReactConditionalRendering/>
       </div>
     </div>
   )
